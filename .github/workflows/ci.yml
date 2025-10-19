@@ -19,7 +19,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10
+        python-version: "3.12"
 
     # 3. Install dependencies
     - name: Install dependencies
@@ -49,10 +49,9 @@ jobs:
 
     # 7. Post CML comment with report
     - name: Publish report via CML
-      uses: iterative/cml@v2
-      with:
-        args: report.xml
+      # uses: iterative/cml@v2
+      # with:
+        # args: report.xml
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # run: |
-        # cml-send-comment report.xml
+      run: cml-send-comment report.xml
