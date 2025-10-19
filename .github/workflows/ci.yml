@@ -49,7 +49,7 @@ jobs:
 
     # 7. Post CML comment with report
     - name: Publish report via CML
-      uses: iterative/cml@v3
+      uses: iterative/cml@v2
       with:
         args: report.xml
       env:
