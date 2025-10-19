@@ -6,5 +6,4 @@ dvc[gvs]==2.21.0
 pytest==7.4.0
 pyarrow==11.0.0
 cml
-cloud-ml-common
 cloud-ml-sdk
