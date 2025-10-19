@@ -1,1 +1,8 @@
-numpy\npandas\nscikit-learn\njoblib\ndvc\npytest\ncml
+pandas
+scikit-learn
+joblib
+dvc[gs]
+pytest
+dvc[gdrive]
+pyarrow
+cml
